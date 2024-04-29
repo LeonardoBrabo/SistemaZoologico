@@ -11,7 +11,7 @@ namespace SistemaZoologico
         
         public Pez(string nombre, string especie, string comida) :base(nombre, especie, comida) { }
 
-        public void Nadar() { Console.WriteLine("Estoy nadando"); }
+        public void Nadar() { Console.WriteLine($"El {getEspecie()} está nadando"); }
 
         public override string comer()
         {

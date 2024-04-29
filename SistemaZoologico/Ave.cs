@@ -12,7 +12,7 @@ namespace SistemaZoologico
         {
         }
 
-        public void Volar() { Console.WriteLine("Estoy volando"); }
+        public void Volar() { Console.WriteLine($"El {getEspecie()} esta volando"); }
 
         public override string comer()
         {

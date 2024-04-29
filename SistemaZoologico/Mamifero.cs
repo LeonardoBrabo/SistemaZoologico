@@ -12,8 +12,8 @@ namespace SistemaZoologico
         {
         }
 
-        public void Amamantar(string especieAnimal) {
-            Console.WriteLine($"El {especieAnimal} está amamantando");
+        public void Amamantar() {
+            Console.WriteLine($"El {getEspecie()} está amamantando");
         }
 
         public override string comer()
