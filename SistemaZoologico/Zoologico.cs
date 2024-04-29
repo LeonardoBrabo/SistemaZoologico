@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -138,5 +139,31 @@ namespace SistemaZoologico
             if (!encontrado) { Console.WriteLine("El animal o la planta no se encuentran en la lista."); }
         
         }
+
+        //probando el Método Find(Predicado) de List para encontrar y actualizar el nombre, la otra forma era con el for y el indice.
+        public void ActualizarCuidador(string nombreAbuscar,string nombreNuevo) {
+            Cuidador cuidadorResultado = listaDeCuidadores.Find(cuidador => cuidador.getNombreCuidador().Equals(nombreAbuscar));
+            if (cuidadorResultado != null)
+            {
+                Console.WriteLine($"Cuidador de nombre: {cuidadorResultado.getNombreCuidador()} encontrado");
+                //Console.Write($"Escriba el nuevo nombre que quiere que tenga el cuidador: ");
+                cuidadorResultado.setNombreCuidador(nombreNuevo); //remplaza por un ReadLine si queres ingresarlo
+                Console.WriteLine($"Nombre {nombreAbuscar} Actualizado a {nombreNuevo}.");
+
+            }
+            else
+            {
+                Console.WriteLine($"El nombre del cuidador {nombreAbuscar} ingresado no existe en la lista de cuidadores");
+            }
+
+        }
+
+
+        
+        public void ActualizarAnimal(string nombreCriatura) {
+            //TODO:
+        
+        }
+
     }
 }

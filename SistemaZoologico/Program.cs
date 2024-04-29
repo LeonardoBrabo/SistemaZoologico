@@ -45,16 +45,24 @@
             //temaiken.PresentarAnimal(Plantita);
 
             //quitar animales de la lista de animales zoo
-            temaiken.QuitarAnimal("Willy"); //uno que no existe
-            temaiken.QuitarAnimal("Trompita"); //uno que si
 
-            temaiken.MostrarListaAnimales();
+            //temaiken.QuitarAnimal("Willy"); //uno que no existe
+            //temaiken.QuitarAnimal("Trompita"); //uno que si
+            //temaiken.MostrarListaAnimales();
 
             //quitar cuidadores de la lista de cuidadores del zoo
 
-            temaiken.QuitarCuidador("Ernesto"); //uno que no existe
-            temaiken.QuitarCuidador("Gustavo"); //uno que si existe
-         
+            //temaiken.QuitarCuidador("Ernesto"); //uno que no existe
+            //temaiken.QuitarCuidador("Gustavo"); //uno que si existe
+            //temaiken.MostrarListaCuidadores();
+
+            //Actualizar el nombre de un Cuidador
+            temaiken.ActualizarCuidador("Sancho","Pedrito");
+
+            temaiken.MostrarListaCuidadores();
+
+            temaiken.ActualizarCuidador("Gustavo", "Pedrito");
+
             temaiken.MostrarListaCuidadores();
 
 

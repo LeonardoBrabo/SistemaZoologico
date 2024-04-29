@@ -19,6 +19,10 @@ namespace SistemaZoologico
 
        public string getNombreCuidador() {  return nombreCuidador; }
 
+        public void setNombreCuidador(string nuevoNombre) {
+            this.nombreCuidador = nuevoNombre;
+        }
+
        public List<IAnimal> getAnimalesACargo()
         {
             return animalesACargo;
