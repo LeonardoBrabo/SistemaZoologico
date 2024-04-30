@@ -27,6 +27,9 @@ namespace SistemaZoologico
         public bool getTipoCarnivoro() { return tipoCarnivoro; }
         public string getComida() { return comida; }
 
+        public void setNombre(string nombre) { this.nombre = nombre; }
+
+        public void setComida(string comida) { this.comida = comida; }
 
         public void Fotosintesis() {
             Console.WriteLine($"la {getTipo()} está haciendo la fotosintesis");

@@ -57,13 +57,18 @@
             //temaiken.MostrarListaCuidadores();
 
             //Actualizar el nombre de un Cuidador
-            temaiken.ActualizarCuidador("Sancho","Pedrito");
+            //temaiken.ActualizarCuidador("Sancho","Pedrito");
+            //temaiken.MostrarListaCuidadores();
+            //temaiken.ActualizarCuidador("Gustavo", "Pedrito");
+            //temaiken.MostrarListaCuidadores();
 
-            temaiken.MostrarListaCuidadores();
+            //actualizar nombre y comida de un animal de la lista del zoo
+           
+            temaiken.ActualizarAnimal("Panchito");
 
-            temaiken.ActualizarCuidador("Gustavo", "Pedrito");
+            temaiken.ActualizarAnimal("Filomena");
 
-            temaiken.MostrarListaCuidadores();
+            temaiken.MostrarListaAnimales();
 
 
         }

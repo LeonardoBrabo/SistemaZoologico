@@ -160,9 +160,57 @@ namespace SistemaZoologico
 
 
         
-        public void ActualizarAnimal(string nombreCriatura) {
-            //TODO:
-        
+        //lo hago con un for comun y con ingreso de datos
+        public void ActualizarAnimal(string nombreCriaturaBuscada) {
+
+            bool encontrado = false;
+            //En este caso voy a actualizar de la manera clasica con un for
+            // primero debo recordar que la lista de Animales del zoo esta compuesto por animales y plantas
+            //ambos heredan solamente de la Interface IAnimal, así que para trabajar debo preguntar que tipo de objeto es
+            //y segun el tipo de objeto comparar el nombre que estoy buscando para cambiar, sus campos.
+            for(int i = 0; i < listaAnimalesDelZoo.Count() ; i++) {
+
+                if (listaAnimalesDelZoo[i] is Animal animal)
+                {
+                    if (animal.getNombre().Equals(nombreCriaturaBuscada))
+                    {
+                        Console.WriteLine($"Se econtro el animal de nombre {animal.getNombre()}");
+                        Console.Write("Ingrese el nuevo nombre para la criatura: ");
+                        animal.setNombre(Console.ReadLine());
+                        Console.Write("\nIngrese la nueva comida para la criatura: ");
+                        animal.setComida(Console.ReadLine());
+
+                        Console.WriteLine($"\nEl nombre del animal fue actualizado a {animal.getNombre()}");
+                        Console.WriteLine($"La comida para el mismo animal fue actualizado a {animal.getComida()}");
+                        encontrado = true;
+                        break; //salgo del bucle
+
+                    }
+                }
+                else if (listaAnimalesDelZoo[i] is Planta planta) {
+
+
+                    if (planta.getNombre().Equals(nombreCriaturaBuscada))
+                    {
+                        Console.WriteLine($"Se econtro la planta de nombre {planta.getNombre()}");
+                        Console.Write("Ingrese el nuevo nombre para la criatura: ");
+                        planta.setNombre(Console.ReadLine());
+                        Console.Write("\nIngrese la nueva comida para la criatura: ");
+                        planta.setComida(Console.ReadLine());
+
+                        Console.WriteLine($"\nEl nombre de la planta fue actualizado a {planta.getNombre()}");
+                        Console.WriteLine($"La comida para el mismo animal fue actualizado a {planta.getComida()}");
+                        encontrado = true;
+                        break; //salgo del bucle
+                    }
+
+                }
+
+            
+            }
+
+            if (!encontrado) { Console.WriteLine("No se encontro ningun animal o planta con ese nombre"); }
+
         }
 
     }

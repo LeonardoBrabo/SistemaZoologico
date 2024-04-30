@@ -24,6 +24,7 @@ namespace SistemaZoologico
         public string getEspecie() { return this.especie; }
         public string getComida() { return this.comida;}
 
+        public void setNombre(string nombreNuevo) { this.nombre = nombreNuevo; }
         public void setComida(string nuevaComida) { this.comida = nuevaComida; }
 
         public virtual string comer() { return $"estoy comiendo {comida}"; }
