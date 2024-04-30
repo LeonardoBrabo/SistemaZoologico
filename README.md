@@ -12,10 +12,10 @@ El sistema debe ser implementado en C# y ejecutarse por consola. Los alumnos deb
 - [x]  Creación de Animales, diferentes , inclusive mamíferos, aves y peces.
 - [x]  cada animal debe tener un nombre, una especie y un tipo de comida asociado.
 - [x]  Los mamíferos debe ser capaces de amamantar, las aves de volar y los peces de nadar.//se crea un método del zoo que se llame mostrar animal, que muestre el nombre y lo que es capaz de hacer.
-- [ ]  el zoológico debe tener la capacidad de agregar, eliminar y actualizar  la información de los animales y los cuidadores.
+- [x]  el zoológico debe tener la capacidad de agregar, eliminar y actualizar  la información de los animales y los cuidadores.
     - [x]  agregar animales y cuidadores. de su lista
     - [x]  eliminar animales y cuidadores de su lista
-    - [ ]  actualizar la información de los animales y de los cuidadores de su lista.
+    - [X]  actualizar la información de los animales y de los cuidadores de su lista.
 - [ ]  Un Método Alimentar, para que el cuidador alimente a los animales de sus lista de animales asignados, verificar si la comida ingresada es del tipo que quiere el animal , si no puede comer.
 - [ ]  EXTRA si al dar de comer a la planta 3 veces mal, la planta se come al cuidador, y se quita al cuidador de la lista del cuidadores del zoo. o se reemplaza  por el nombre y la leyenda el “fue comido por la planta carnívora”
 - [ ]  EXTRA MUY EXTRA: menús interactivos para ingresar los datos, y elegir opciones.
