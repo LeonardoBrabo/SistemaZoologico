@@ -110,6 +110,8 @@ namespace SistemaZoologico
 
         }
 
+       
+
         public void QuitarAnimal(string nombreCriatura) {
 
             bool encontrado = false;

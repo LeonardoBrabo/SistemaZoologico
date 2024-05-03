@@ -1,4 +1,6 @@
-﻿namespace SistemaZoologico
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace SistemaZoologico
 {
     internal class Program
     {
@@ -8,7 +10,8 @@
             Mamifero Elefante = new Mamifero("Trompita", "Elefante", "Mani");
             Ave Halcon = new Ave("HawkEyes", "Halcon", "semillas");
             Pez Tiburon = new Pez("Sharkboy", "Tiburon", "Carne cruda");
-            Planta Plantita = new Planta("Filomena", "Planta Carnivora", true,"Minerales");
+            Planta Plantita = new Planta("Filomena", "Yerbera", false,"Minerales");
+            Planta PlantaAsesina = new Planta("Ruperta", "Planta Carnivora", true, "Carne");
 
 
             //creación de cuidadores
@@ -23,6 +26,7 @@
             temaiken.AgregarAnimal(Halcon);
             temaiken.AgregarAnimal(Tiburon);
             temaiken.AgregarAnimal(Plantita);
+            temaiken.AgregarAnimal(PlantaAsesina);
 
             //se agregan cuiadores a la lista de cuidadores del zoo
             temaiken.AgregarCuidador(empleado1);
@@ -31,6 +35,7 @@
             //asignación de animales a cada cuiadador
             temaiken.AsignarCuidadorAnimal(Elefante, empleado1);
             temaiken.AsignarCuidadorAnimal(Plantita, empleado1);
+            temaiken.AsignarCuidadorAnimal(PlantaAsesina, empleado1);
             temaiken.AsignarCuidadorAnimal(Halcon, empleado2);
             temaiken.AsignarCuidadorAnimal(Tiburon, empleado2);
 
@@ -64,14 +69,27 @@
 
             //actualizar nombre y comida de un animal de la lista del zoo
            
-            temaiken.ActualizarAnimal("Panchito");
+            //temaiken.ActualizarAnimal("Panchito");
 
-            temaiken.ActualizarAnimal("Filomena");
+            //temaiken.ActualizarAnimal("Filomena");
 
-            temaiken.MostrarListaAnimales();
+            //temaiken.MostrarListaAnimales();
+
+
+            //el Cuidador da de comer a los animales de su lista
+            empleado1.AlimentarAnimal(empleado1.getAnimalesACargo()[0], "Mani");
+            empleado1.AlimentarAnimal(empleado1.getAnimalesACargo()[1], "Mani");
+
+            //el cuidador es comido por la planta carnivora.
+           
+            empleado1.AlimentarAnimal(empleado1.getAnimalesACargo()[2], "Arroz");
+            temaiken.QuitarCuidador(empleado1.getNombreCuidador());
+            temaiken.MostrarListaCuidadores();
 
 
         }
+
+       
     }
 
     
