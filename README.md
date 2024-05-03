@@ -16,6 +16,6 @@ El sistema debe ser implementado en C# y ejecutarse por consola. Los alumnos deb
     - [x]  agregar animales y cuidadores. de su lista
     - [x]  eliminar animales y cuidadores de su lista
     - [X]  actualizar la información de los animales y de los cuidadores de su lista.
-- [ ]  Un Método Alimentar, para que el cuidador alimente a los animales de sus lista de animales asignados, verificar si la comida ingresada es del tipo que quiere el animal , si no puede comer.
-- [ ]  EXTRA si al dar de comer a la planta 3 veces mal, la planta se come al cuidador, y se quita al cuidador de la lista del cuidadores del zoo. o se reemplaza  por el nombre y la leyenda el “fue comido por la planta carnívora”
+- [x]  Un Método Alimentar, para que el cuidador alimente a los animales de sus lista de animales asignados, verificar si la comida ingresada es del tipo que quiere el animal , si no puede comer.
+- [x]  EXTRA si al dar de comer a la planta carnivora el alimento equivocado ésta se come al cuidador, y se quita al cuidador de la lista del cuidadores del zoo
 - [ ]  EXTRA MUY EXTRA: menús interactivos para ingresar los datos, y elegir opciones.
